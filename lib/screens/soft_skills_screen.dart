@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart'; // <--- AGREGAR ESTO
 import 'results_screen.dart';
+import 'package:talentselect/api_keys.dart';
 
 class SoftSkillsScreen extends StatefulWidget {
   final String nombre;
@@ -249,7 +250,7 @@ class _SoftSkillsScreenState extends State<SoftSkillsScreen> with WidgetsBinding
   Future<void> _generarHabilidadesBlandasConIA() async {
     setState(() => _cargandoIA = true);
 
-    const apiKey = "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";
+    const apiKey = ApiKeys.groqKey;
     final url = Uri.parse("https://api.groq.com/openai/v1/chat/completions");
 
     final int randomSeed = DateTime.now().millisecondsSinceEpoch;
