@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "779759739923",
+    "project_id": "talentselect",
+    "storage_bucket": "talentselect.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779759739923:android:67f90c66182f673fe94be6",
+        "android_client_info": {
+          "package_name": "com.example.talentselect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7UahAxxyCcO0YJZpU4k44aFv7JykDc6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
