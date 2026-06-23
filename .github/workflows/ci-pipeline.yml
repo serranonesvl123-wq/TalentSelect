@@ -44,6 +44,13 @@ jobs:
       # ─────────────────────────────────────────
       # 4. COMPILACIÓN
       # ─────────────────────────────────────────
+      - name: Crear api_keys.dart para CI (placeholder seguro)
+        run: |
+          cat > lib/api_keys.dart << 'EOF'
+          class ApiKeys {
+            static const String groqKey = 'CI_PLACEHOLDER';
+          }
+          EOF
       - name: Compilar proyecto Flutter (APK debug)
         run: flutter build apk --debug
 
