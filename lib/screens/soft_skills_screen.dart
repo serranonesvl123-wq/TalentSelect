@@ -249,7 +249,6 @@ class _SoftSkillsScreenState extends State<SoftSkillsScreen> with WidgetsBinding
 
   Future<void> _generarHabilidadesBlandasConIA() async {
     setState(() => _cargandoIA = true);
-
     const apiKey = ApiKeys.groqKey;
     final url = Uri.parse("https://api.groq.com/openai/v1/chat/completions");
 
@@ -422,7 +421,7 @@ class _SoftSkillsScreenState extends State<SoftSkillsScreen> with WidgetsBinding
   Widget build(BuildContext context) {
     if (_cargandoIA) {
       return Scaffold(
-        backgroundColor: const Color(0xFFF5F9F9),
+        backgroundColor: const Color(0xFFFFFFFF),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -430,7 +429,7 @@ class _SoftSkillsScreenState extends State<SoftSkillsScreen> with WidgetsBinding
               CircularProgressIndicator(color: tealColor),
               const SizedBox(height: 24),
               Text(
-                'PREPARANDO EVALUACIÓN SENSORIAL / SOFT SKILLS',
+                'Preparando Evaluación-Hab. Blandas',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1.5,
